@@ -15,12 +15,28 @@ e.grid(row=0, column=0, columnspan=3, padx=10,  pady=10)
 # Define functions
 
 def button_click(number):
-  e.get()
+  current = e.get()
+  e.delete(0, END)
+  #concanate strings
+  e.insert(0, str(current) + str(number))
 
 def button_add():
-  pass
+  first_number = e.get()
+
+  #global variables
+  global fnumber
+  global math
+  math = "addition"
+  fnumber = int(first_number)
+  e.delete(0, END)
+  
 def button_equal():
-  pass
+    second_numnber = e.get()
+    e.delete(0,END)
+
+    #if statement checks which button the user is pressing
+    if math == "addition":
+        e.insert(0, fnumber + int(second_numnber))
 
 def button_clear():
   e.delete(0, END)
