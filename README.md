@@ -1,5 +1,5 @@
-# Simple-Python-Calculator 
-# Intro to Python - Project 2
+## Simple-Python-Calculator 
+### Intro to Python - Project 2
 
 > This project is the initial code to create a simple Python Calculator.
 
